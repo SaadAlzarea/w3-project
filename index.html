@@ -4,12 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuwaiq Academy</title>
+    <link rel="icon" type="image/x-icon" href="./images/link-icon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    
+    <style>
+      body::before {
+        --size: 120px;
+        --line: color-mix(in lch, canvasText, transparent 90%);
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        background: linear-gradient(
+              90deg,
+              var(--line) 1px,
+              transparent 1px var(--size)
+            )
+            50% 50% / var(--size) var(--size),
+          linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+            var(--size) var(--size);
+        mask: linear-gradient(-20deg, transparent 20%, white);
+        top: 0;
+        transform-style: flat;
+        pointer-events: none;
+        z-index: -1;
+      }
+      .navbar-custom {
+            background-color: transparent !important;
+            transition: all 0.3s ease;
+        }
+        .navbar-scrolled {
+            background-color: rgba(255, 255, 255, 0.3) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        nav::before{
+            filter: blur(1px);
+        }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- nav bar  -->
+    <nav
+      class="navbar navbar-expand-lg p-3 mb-2 bg-transparent text-body navbar-custom bg-transparent"
+      style="
+        
+        
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      "
+    >
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/tuwaiq-logo.png"
+            alt="Tuwaiq Academy"
+            height="70vh"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          style="width: 100%"
+        >
+          <div class="container">
+            <ul
+              class="navbar-nav me-auto d-flex justify-content-center align-items-center gap-3"
+              style="
+                width: 90%;
+                height: 10vh;
+                border-radius: 15px;
+                background-color: rgb(255, 255, 255);
+              "
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-white rounded-pill"
+                  style="background-color: #4f29b7"
+                  href="#"
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Tuwaiq Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Academies &nbsp;&nbsp;|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test Center </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accreditations &nbsp;&nbsp;| </a>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="btn btn-outline-secondary"
+                  style="
+                    color: rgba(79 41 183);
+                    background-color: rgb(227 216 255);
+                    border-style: none;
+                  "
+                >
+                  عربي
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center" style="width: 9%">
+            <button
+              class="btn btn-signin me-2"
+              style="background-color: #4f29b7; color: aliceblue"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
