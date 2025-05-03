@@ -11,6 +11,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
     <style>
       body::before {
@@ -38,13 +39,15 @@
         background-color: transparent !important;
         transition: all 0.3s ease;
       }
-      .navbar-scrolled {
+      /* .navbar-scrolled {
         background-color: rgba(255, 255, 255, 0.3) !important;
         backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      nav::before {
-        filter: blur(1px);
+      } */
+      nav {
+        background-color: #ffffffa7; /* Blur effect */
+        backdrop-filter: blur(12px);
+        /* background-color: rgba(255, 255, 255, 0.8); */
       }
       .btn-in-body {
         box-shadow: 5px 5px 0 #4f29b7;
@@ -81,7 +84,7 @@
     <div class="">
       <!-- nav bar -->
       <nav
-        class="navbar navbar-expand-lg p-2 mb-2 text-body navbar-custom"
+        class="navbar navbar-expand-lg p-2 mb-2 text-body  sticky-top "
         style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)"
       >
         <div class="container-fluid">
@@ -102,9 +105,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul
-              class="navbar-nav mx-auto d-flex align-items-center gap-2"
+              class="navbar-nav mx-auto d-flex align-items-center justify-content-center gap-3"
               style="
                 height: 10vh;
+                width: 80%;
                 border-radius: 15px;
                 background-color: rgb(255, 255, 255);
               "
@@ -217,7 +221,7 @@
             </div>
           </div>
           <!-- greens-red section -->
-          <div class="col-lg-4 col-md-12 d-flex flex-column gap-3">
+          <div class="col-lg-4 col-md-12 d-flex flex-column gap-3 ">
             <!-- green number of joined square -->
             <div
               class="rounded-3 p-3"
@@ -344,5 +348,170 @@
             </div>
          </div>
       </section>
+      <section class="container my-5">
+
+        <p class="fs-4"> <b>Registration Closing Soon:</b> <span class="fs-6"><a href="">View More ></a></span></p>
+        <div class="d-flex flex-row flex-nowrap overflow-auto " style="gap: 25%;">
+          <!-- card-1 -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <img src="./images/bootcamp1.png" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <p style="font-size: 0.5em;">Executive programs</p>
+                <h5 class="card-title">Excel program for beginners</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);"> Program - 1 Week</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior </p>
+                <p class="card-text" style="color: forestgreen;">Ends tomorrow</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card-2  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/mechatronx-engineering.png" class="" alt="..." width="70%">
+              </div>
+              <div class="card-body">
+                <p style="font-size: 0.5em;">Mechatronx engineering</p>
+                <h5 class="card-title">Basics of Electronic Painting Design (PCB)</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Program - 1 Week</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior </p>
+                <p class="card-text" style="color: forestgreen;">Ends after 7 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card-3  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/brean.png" class="" alt="..." width="75%">
+              </div>              <div class="card-body">
+                <p style="font-size: 0.5em;">Data science and artificial intelligence</p>
+                <h5 class="card-title">SQL database app using Python</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Program - 1 Week</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior </p>
+                <p class="card-text" style="color: forestgreen;">Ends after 7 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card-4  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/brean.png" class="" alt="..." width="75%">
+              </div>             
+               <div class="card-body">
+                <p style="font-size: 0.5em;">Data science and artificial intelligence</p>
+                <h5 class="card-title">Basics of artificial intelligence</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Program - 2 Weeks</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Junior </p>
+                <p class="card-text" style="color: forestgreen;">Ends after 7 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card-5  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/mechatronx-engineering.png" class="" alt="..." width="70%">
+              </div>
+              <div class="card-body">
+                <p style="font-size: 0.5em;">Mechatronx engineering</p>
+                <h5 class="card-title">Basics of Electronic Painting Design (PCB)</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Program - 1 Week</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior </p>
+                <p class="card-text" style="color: forestgreen;">Ends after 21 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+            <!-- card-6  -->
+            <div class="card card-block mx-2 my-2" >
+              <div class="card" style="width: 18rem;">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./images/devolopment.png" class="" alt="..." width="65%">
+                </div>                <div class="card-body">
+                  <p style="font-size: 0.5em;">Software development and applications</p>
+                  <h5 class="card-title">Python programming basics</h5>
+                  <p class="card-text" style="color: rgb(255, 118, 68);">Program - 1 Week</p>
+                  <p class="card-text" style="color: rgb(255, 118, 68);">Junior </p>
+                  <p class="card-text" style="color: forestgreen;">Ends after 21 days</p>
+                  <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+                      <!-- card-7  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/devolopment.png" class="" alt="..." width="65%">
+              </div>           
+                 <div class="card-body">
+                <p style="font-size: 0.5em;">Software development and applications</p>
+                <h5 class="card-title">Development of web sites using the Python language</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Camp - 12 Weeks</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior</p>
+                <p class="card-text" style="color: forestgreen;">Ends after 42 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card-8  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/devolopment.png" class="" alt="..." width="65%">
+              </div>       
+                     <div class="card-body">
+                <p style="font-size: 0.5em;">Software development and applications</p>
+                <h5 class="card-title">Development of web sites using the Java language</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Camp - 12 Weeks</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior </p>
+                <p class="card-text" style="color: forestgreen;">Ends after 49 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card-9  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/brean.png" class="" alt="..." width="75%">
+              </div>              <div class="card-body">
+                <p style="font-size: 0.5em;">Executive programs</p>
+                <h5 class="card-title">Excel program for beginners</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Program - 1 Week</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Senior </p>
+                <p class="card-text" style="color: forestgreen;">Ends tomorrow</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+                    <!-- card-10  -->
+          <div class="card card-block mx-2 my-2" >
+            <div class="card" style="width: 18rem;">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./images/brean.png" class="" alt="..." width="75%">
+              </div>             
+               <div class="card-body">
+                <p style="font-size: 0.5em;">Data science and artificial intelligence</p>
+                <h5 class="card-title">Basics of artificial intelligence</h5>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Program - 2 Weeks</p>
+                <p class="card-text" style="color: rgb(255, 118, 68);">Junior </p>
+                <p class="card-text" style="color: forestgreen;">Ends after 7 days</p>
+                <a href="#" class="btn" style="background-color: #4f29b7; color: aliceblue; width: 100%;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <footer>
+        <br><br><br><br><br><br>
+      </footer>
   </body>
 </html>
