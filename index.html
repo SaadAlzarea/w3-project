@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuwaiq Academy</title>
-    <link rel="icon" type="image/png" href="./images/link-icon.png">
+    <link rel="icon" href="./images/link-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
-    
-    <style> 
+
+    <style>
       body::before {
         --size: 120px;
         --line: color-mix(in lch, canvasText, transparent 90%);
         content: "";
         height: 100vh;
-        width: 100vw;
+        width: 90vw;
         position: absolute;
         background: linear-gradient(
               90deg,
@@ -35,55 +35,53 @@
         z-index: -1;
       }
       .navbar-custom {
-            background-color: transparent !important;
-            transition: all 0.3s ease;
-        }
-        .navbar-scrolled {
-            background-color: rgba(255, 255, 255, 0.3) !important;
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        nav::before{
-            filter: blur(1px);
-        }
+        background-color: transparent !important;
+        transition: all 0.3s ease;
+      }
+      .navbar-scrolled {
+        background-color: rgba(255, 255, 255, 0.3) !important;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      nav::before {
+        filter: blur(1px);
+      }
+      .btn-in-body {
+        box-shadow: 5px 5px 0 #4f29b7;
+      }
+      .btn-in-body:hover {
+        border: 2px solid #4f29b7;
+        box-shadow: 0px 0px 0 #4f29b7;
+      }
     </style>
   </head>
   <body>
-    <!-- nav bar  -->
-    <nav
-      class="navbar navbar-expand-lg p-3 mb-2 bg-transparent text-body navbar-custom bg-transparent"
-      style="
-        
-        
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      "
-    >
-      <div class="container-fluid d-flex justify-content-center">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./images/tuwaiq-logo.png"
-            alt="Tuwaiq Academy"
-            height="70vh"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-          style="width: 100%"
-        >
-          <div class="container">
+    <div class="">
+      <!-- nav bar -->
+      <nav
+        class="navbar navbar-expand-lg p-2 mb-2 text-body navbar-custom"
+        style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/tuwaiq-logo.png"
+              alt="Tuwaiq Academy"
+              height="70vh"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul
-              class="navbar-nav me-auto d-flex justify-content-center align-items-center gap-3"
+              class="navbar-nav mx-auto d-flex align-items-center gap-2"
               style="
-                width: 90%;
                 height: 10vh;
                 border-radius: 15px;
                 background-color: rgb(255, 255, 255);
@@ -94,8 +92,8 @@
                   class="nav-link btn btn-primary text-white rounded-pill"
                   style="background-color: #4f29b7"
                   href="#"
-                  >Home
-                </a>
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About Tuwaiq Academy</a>
@@ -125,29 +123,157 @@
                 </button>
               </li>
             </ul>
+            <div class="d-flex align-items-center">
+              <button
+                class="btn btn-signin me-2"
+                style="background-color: #4f29b7; color: aliceblue"
+              >
+                Sign In
+              </button>
+            </div>
           </div>
-
-          <div class="d-flex align-items-center" style="width: 9%">
-            <button
-              class="btn btn-signin me-2"
-              style="background-color: #4f29b7; color: aliceblue"
+        </div>
+      </nav>
+      <!-- here have body start -->
+      <section class="container">
+        <div class="row g-3">
+          <!-- left sec purple-sec -->
+          <div
+            class="col-lg-8 col-md-12 rounded-3"
+            style="
+              background-color: #e7ddff;
+              background-image: url(./images/tiwaiq-maunten.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 50%;
+            "
+          >
+            <div class="p-3">
+              <p
+                class="fs-4"
+                style="
+                  color: #4f29b7;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                "
+              >
+                Learn Future Technologies
+              </p>
+              <p
+                class="fs-4"
+                style="
+                  color: #4f29b7;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                "
+              >
+                In One Place
+              </p>
+              <p class="text-secondary w-50" style="font-size: smaller">
+                Professional boot camps and programs in partnership with major
+                international organizations To develop your skills in advanced
+                technologies fields, with a learning methodology based on
+                applied learning, within a competitive educational environment.
+              </p>
+            </div>
+            <!-- button -->
+            <div class="m-3">
+              <button
+                class="btn-in-body"
+                style="
+                  width: 30%;
+                  height: 8vh;
+                  border-style: none;
+                  border-radius: 10px;
+                  border: 2px solid #4f29b7;
+                  color: #4f29b7;
+                  font-size: 1.3em;
+                  background-color: white;
+                "
+              >
+                Learn Now
+                <img src="./images/edge.png" alt="" width="10%" />
+              </button>
+            </div>
+          </div>
+          <!-- greens-red section -->
+          <div class="col-lg-4 col-md-12 d-flex flex-column gap-3">
+            <!-- green number of joined square -->
+            <div
+              class="rounded-3 p-3"
+              style="
+                background-color: #bffffa;
+                color: #00877d;
+                font-weight: 500;
+              "
             >
-              Sign In
-            </button>
+              <p>The number of registered in the camps and programs so far</p>
+              <p class="fs-3" style="font-weight: 600">1,716,546</p>
+            </div>
+            <!-- red holberton square -->
+            <div
+              class="rounded-3 p-3"
+              style="background-color: rgb(255 221 225); font-weight: 600"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <p style="color: rgb(255 83 109)">Holberton Foundation Track</p>
+                <button
+                  style="
+                    background-color: rgb(255 83 109);
+                    border-radius: 30px;
+                    border-style: none;
+                    color: white;
+                    height: 7vh;
+                  "
+                >
+                  Register Now
+                </button>
+              </div>
+              <div
+                class="border d-flex flex-column justify-content-center align-items-center"
+              >
+                <div
+                  class="w-75 p-3 rounded-4 mb-3"
+                  style="background-color: white"
+                >
+                  <p
+                    class="text-center text-secondary"
+                    style="font-size: x-small; font-weight: 100"
+                  >
+                    The foundation path for Holberton's <br />first global
+                    academy in the Middle East
+                  </p>
+                  <img
+                    src="./images/body-red-squar/holberton.png"
+                    alt=""
+                    height="100"
+                  />
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center">
+                  <img
+                    class="rounded-3 p-1"
+                    style="background-color: rgb(255, 232, 236)"
+                    src="./images/body-red-squar/laptop.png"
+                    alt=""
+                  />
+                  <img
+                    class="rounded-3 p-1"
+                    style="background-color: rgb(255, 232, 236)"
+                    src="./images/body-red-squar/vr.png"
+                    alt=""
+                    width="20%"
+                  />
+                  <img
+                    class="rounded-3 p-1"
+                    style="background-color: rgb(255, 232, 236)"
+                    src="./images/body-red-squar/keyboard.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- here have body start -->
-    <section class="container bg-info">
-        <div>
-            <div class="purple-sec">
-
-            </div>
-            <div class="greens-red">
-                
-            </div>
-        </div>
-    </section>
+      </section>
   </body>
 </html>
