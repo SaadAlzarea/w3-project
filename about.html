@@ -8,7 +8,8 @@
     rel="stylesheet" 
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
     crossorigin="anonymous">
-    <link rel="icon" href="./images/tuwaiq-logo.png">
+    <link rel="icon" href="./images/link-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.min.css">
     <style>
         /* background style */
         body::before {
@@ -104,31 +105,92 @@
                 margin-bottom: 20px; 
             }
         }
+        .navbar-custom {
+        background-color: transparent !important;
+        transition: all 0.3s ease;
+      }
+      nav {
+        background-color: #ffffffa7; /* Blur effect */
+        backdrop-filter: blur(12px);
+        /* background-color: rgba(255, 255, 255, 0.8); */
+      }
     </style>
 </head>
 <body>
-<!-- nav bar -->
-<nav class="navbar navbar-expand-lg p-3 mb-2 bg-transparent text-body navbar-custom bg-transparent" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
-    <div class="container-fluid d-flex justify-content-center">
-        <a class="navbar-brand" href="#">
-            <img src="./images/tuwaiq-logo.png" alt="Tuwaiq Academy" height="70vh" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+    <!-- nav bar -->
+    <nav
+    class="navbar navbar-expand-lg  bg-transparent text-body navbar-custom bg-transparent sticky-top"
+    style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)"
+    >
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img
+        src="./images/tuwaiq-logo.png"
+        alt="Tuwaiq Academy"
+        height="70vh"
+        />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul
+        class="navbar-nav mx-auto d-flex align-items-center justify-content-center gap-3"
+        style="
+            height: 10vh;
+            width: 80%;
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
+        "
+        >
+        <li class="nav-item">
+            <a
+            class="nav-link btn"
+            href="./index.html"
+            >Home</a
+            >
+        </li>
+        <li class="nav-item  rounded-3"
+        style="background-color: #4f29b7;"
+        >
+            <a class="nav-link text-light" href="#">About Tuwaiq Academy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Academies &nbsp;&nbsp;|</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Test Center </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./partnerships.html">Partners </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Accreditations &nbsp;&nbsp;| </a>
+        </li>
+        <li class="nav-item">
+            <button
+            class="btn btn-outline-secondary"
+            style="
+                color: rgba(79 41 183);
+                background-color: rgb(227 216 255);
+                border-style: none;
+            "
+            >
+            عربي
+            </button>
+        </li>
+        </ul>
+        <div class="d-flex align-items-center">
+        <button
+            class="btn btn-signin me-2"
+            style="background-color: #4f29b7; color: aliceblue"
+        >
+            Sign In
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto d-flex justify-content-center align-items-center gap-3" style="width: 90%; height: 10vh; border-radius: 15px; background-color: rgb(255, 255, 255);">
-                <li class="nav-item"><a class="nav-link btn btn-primary text-white rounded-pill" style="background-color: #4f29b7" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./about.html">About Tuwaiq Academy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Academies &nbsp;&nbsp;|</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Test Center </a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Partners </a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Accreditations &nbsp;&nbsp;| </a></li>
-                <li class="nav-item"><button class="btn btn-outline-secondary" style="color: rgba(79 41 183); background-color: rgb(227 216 255); border-style: none;">عربي</button></li>
-            </ul>
         </div>
     </div>
-</nav>
+    </div>
+    </nav>
 
 <!-- Start First Section -->
 <div class="container mt-5 first-section  mb-5">
@@ -272,7 +334,90 @@
 
     <!-- Start footer -->
     <footer>
+        <footer class="container mt-5">
+            <div class="rounded-3 p-3" style="background-color: #e7ddff;">
+              <!-- Top Section -->
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3" style="border-bottom: 1px solid white;">
+                <!-- Logo -->
+                <div class="mb-3 mb-md-0">
+                  <img src="./images/tuwaiq-logo.png" alt="Tuwaiq Academy Logo" style="width: 120px; max-width: 100%;">
+                </div>
+                
+                <!-- Links -->
+                <div class="d-flex flex-wrap justify-content-center justify-content-md-evenly w-100 w-md-75">
+                  <div class="text-center text-md-start mx-3 mb-2 mb-md-0">
+                    <p class="mb-1" style="font-size: 0.75rem; color: #4f29b7;">Join us as trainer</p>
+                    <p class="mb-0" style="font-size: 0.75rem; color: #4f29b7;">About Tuwaiq Academy</p>
+                  </div>
+                  <div class="text-center text-md-start mx-3">
+                    <p class="mb-1" style="font-size: 0.75rem; color: #4f29b7;">Privacy Policy</p>
+                    <p class="mb-0" style="font-size: 0.75rem; color: #4f29b7;">Terms and Conditions</p>
+                  </div>
+                </div>
+              </div>
+          
+              <hr class="my-2">
+          
+              <!-- Bottom Section -->
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-2">
+                <!-- Copyright -->
+                <div class="mb-3 mb-md-0">
+                  <p class="mb-0" style="font-size: 0.65rem; color: #4f29b7;">© 2025 Tuwaiq Academy. All Rights Reserved.</p>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="d-flex align-items-center justify-content-center rounded-circle" style="
+                    width: 32px;
+                    height: 32px;
+                    background-color: #4f29b7;
+                    color: white;
+                    text-decoration: none;
+                  ">
+                    <i class="bi bi-discord"></i>
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center rounded-circle" style="
+                    width: 32px;
+                    height: 32px;
+                    background-color: #4f29b7;
+                    color: white;
+                    text-decoration: none;
+                  ">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center rounded-circle" style="
+                    width: 32px;
+                    height: 32px;
+                    background-color: #4f29b7;
+                    color: white;
+                    text-decoration: none;
+                  ">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center rounded-circle" style="
+                    width: 32px;
+                    height: 32px;
+                    background-color: #4f29b7;
+                    color: white;
+                    text-decoration: none;
+                  ">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center rounded-circle" style="
+                    width: 32px;
+                    height: 32px;
+                    background-color: #4f29b7;
+                    color: white;
+                    text-decoration: none;
+                  ">
+                    <i class="bi bi-snapchat"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
     </footer>
     <!-- Start footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
